@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+  background: #F5F5F5;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.message {
+  background: #333;
+  color: #F5F5F5;
+  padding: 20px;
+  border-radius: 3px;
+}

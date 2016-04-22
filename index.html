@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="assessmentApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Assessment</title>
+    <script src="angular.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main ng-controller="MainController as main">
+      <h1>Add message</h1>
+      <input type="text" ng-model="main.input" />
+      <button ng-click="main.addMessage()">Add</button>
+      <p ng-show="main.currentMessage"><b>Message is:</b> {{main.currentMessage}}</p>
+
+      <h1 ng-show="main.showHistory">Previous messages are:</h1>
+      <div ng-show="main.showHistory" ng-repeat="message in main.pastMessages track by $index">
+        <p class="message">{{message}}</p>
+      </div>
+
+    </main>
+  </body>
+</html>
